@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	 <link rel="stylesheet" type="text/css" href="http://localhost:3000/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="http://localhost:3000/css/productsToAdd.css">
+    <script src="http://localhost:3000/js/jquery-3.2.1.min.js"></script>
+    <script src="http://localhost:3000/bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<form method="post" action=<%- isnew?"/productsToAdd":"/detail/update"%> enctype="multipart/form-data">
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">商品名称</span>
+				<input type="text" class="form-control" placeholder="商品名称" aria-describedby="basic-addon1" value="<%- isnew?"":content[0].name%>" name="name">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">商品类型</span>
+				<input type="text" class="form-control" placeholder="商品类型" aria-describedby="basic-addon1" value="<%- isnew?"":content[0].type%>" name="type">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">商品价格</span>
+				<input type="text" class="form-control" placeholder="商品价格" aria-describedby="basic-addon1" value="<%- isnew?"":content[0].price%>" name="price">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">商品简介</span>
+				<textarea class="form-control" placeholder="商品简介" aria-describedby="basic-addon1" name="intro"><%- isnew?"":content[0].intro%></textarea>
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">商品备注</span>
+				<textarea class="form-control" placeholder="商品备注" aria-describedby="basic-addon1" name="remark"><%- isnew?"":content[0].remark%></textarea>
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon1">请重新选择图片</span>
+				<input type="file" name="file" />
+			</div>
+			<%if(!isnew){%>
+				<input type="hidden" name="id" value=<%-content[0]._id%>>
+			<%}%>			
+			<button type="submit" class="btn btn-info">发布信息</button>
+		</form>
+	</div>
+</body>
+</html>

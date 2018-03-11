@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>details</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/detail.css">
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="panel panel-primary">
+	      	<div class="panel-heading">
+	        	<h3 class="panel-title">
+	        		<%- content[0].name%>
+	    		</h3>
+	      	</div>
+	      	<div>
+	      		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+	      			类型:<%- content[0].type%>
+	      		</div>
+	      		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+	      			价格:￥<%- content[0].price%>
+	      		</div>
+	      		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+	      			简介:<%- content[0].intro%>
+	      		</div>
+	      		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-center">
+	      			备注:<%- content[0].remark%>
+	      		</div>
+	      		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+	      			<img src="<%- content[0].filepath%>">
+	      		</div>
+	      		<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+	      			<a href="/" class="home">回到首页</a>
+	      		</div>
+	      	</div>
+	    </div>
+	</div>
+</body>
+</html>

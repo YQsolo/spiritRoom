@@ -1,0 +1,17 @@
+html,body,div,input,img,h1,h2,h3,ul,li,span{
+	padding:0;
+	margin:0;
+}
+body{
+	font-size:14px;
+	font-family: "宋体";
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration:none;
+}
+img{
+	border:0;
+}

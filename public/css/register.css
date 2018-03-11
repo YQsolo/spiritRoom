@@ -1,0 +1,21 @@
+#register{
+	width: 550px;
+	height:300px;
+	position:absolute;
+	right:0;
+	left:600px;
+	top:0;
+	bottom:0;
+	margin:auto;
+	padding:20px;
+	border-radius:30px;
+	background:#fff;
+}
+body{
+	background:url("../images/register.png") no-repeat;
+	background-size:100%;
+}
+.text-danger{
+	text-align: center;
+	font-weight: bold;
+}

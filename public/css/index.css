@@ -1,0 +1,14 @@
+#logo{
+	height:50px;
+}
+body{
+	min-height:375px;
+	background:url("../images/index.jpg") no-repeat;
+	background-size:100%;
+}
+.navbar-brand{
+	padding:0;
+}
+main .container{
+	background:#ddd;
+}

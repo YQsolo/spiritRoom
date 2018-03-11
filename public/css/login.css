@@ -1,0 +1,23 @@
+#login{
+	width: 400px;
+	height:230px;
+	position:absolute;
+	right:900px;
+	left:0;
+	top:0;
+	bottom:0;
+	margin:auto;
+	padding:20px;
+	border-radius:30px;
+	background:#fff;
+}
+body{
+	background:url("../images/background.jpg") no-repeat;
+	background-size:100%;
+}
+.text-danger{
+	text-align: center;
+}
+#logo{
+	width:100px;
+}

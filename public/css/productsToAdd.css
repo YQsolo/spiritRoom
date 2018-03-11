@@ -1,0 +1,15 @@
+.container{
+	margin:100px;
+	background:#fff;
+	padding:30px;
+	border:1px solid #ccc;
+	border-radius:10px;
+}
+.container form .input-group{
+	margin-bottom:20px;
+}
+body{
+	min-height:375px;
+	background:url("../images/update.jpg") no-repeat;
+	background-size:100%;
+}
